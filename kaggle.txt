@@ -1,0 +1,18 @@
+! pip install -q kaggle
+from google.colab import files
+files.upload()
+! mkdir ~/.kaggle
+! cp kaggle.json ~/.kaggle/
+! chmod 600 ~/.kaggle/kaggle.json
+! kaggle datasets list
+
+
+# to download dataset
+potato leaf dataset
+!kaggle datasets download -d muhammadardiputra/potato-leaf-disease-dataset
+
+flicker8k dataset
+!kaggle datasets download -d adityajn105/flickr8k
+
+# to unzip datasets
+!unzip zip_file_name -d folder_name
